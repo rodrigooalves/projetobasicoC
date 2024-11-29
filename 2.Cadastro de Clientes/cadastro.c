@@ -48,7 +48,7 @@ int main () {
 
                 numClientes++;
 
-                printf("Cliente adicionado com sucesso.\n");
+                printf("Cliente adicionado com sucesso. com muito sucesso!\n");
                 break;
             
             }
@@ -64,6 +64,28 @@ int main () {
                     traco();
                 }
                 break;
+            }
+
+            case 3: {
+
+                char nome[100];
+
+                printf("Digite o nome do cliente que deseja editar: \n");
+                scanf("%s", &nome);
+                
+                for( int i = 0; i < numClientes; i++) {
+                    if (strcmp(clientes[i].nome, nome) == 0){
+                        printf("Digite o nome do cliente: ");
+                        scanf("%s", clientes[i].nome);
+
+                        printf("Digite o novo email do cliente: ");
+                        scanf("%s", clientes[i].email);
+
+                        printf("Cliente editado com sucesso! .\n");
+                        break;
+                    }
+                }
+
             }
         }
 
