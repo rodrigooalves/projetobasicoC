@@ -55,7 +55,7 @@ int main () {
 
             case 2: {
 
-                printf("Clientes Cadastrados: ");
+                printf("Clientes Cadastrados muito cadastrados: ");
                 traco();
 
                 for(int i = 0; i< numClientes; i++) {
